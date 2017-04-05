@@ -12,10 +12,10 @@ int side_length(int length);
 void printArray();
 
 /*******************************************************************************
-*This program takes < * .txt as an argument and returns an enciphered
-*message. It parses the message through a row major 2d square matrix array and
-*then prints in a column major. The empty cells of the array are filled with
-*randchar and produces an enciphered message.
+* This program takes < * .txt as an argument and returns an enciphered
+* message. It parses the message through a row major 2d square matrix array and
+* then prints in a column major. The empty cells of the array are filled with
+* randchar and produces an enciphered message.
 *******************************************************************************/
 
 int main(int  argc, char *argv[], char **env)
