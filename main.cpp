@@ -31,32 +31,32 @@ int main(int  argc, char *argv[], char **env)
         str += tolower(s);
     }
 
-//check each character for isalpha and erase non-alpha
-for (int i = 0 ; i < str.length() ; ++i)
-{
-    if (!isalpha(str[i]))
-       {
+    //check each character for isalpha and erase non-alpha
+    for (int i = 0 ; i < str.length() ; ++i)
+    {
+        if (!isalpha(str[i]))
+        {
              str.erase(i,1);
              --i;
-       }
-}
+        }
+    }
 
-int length  = str.length();
-char arrayCounter[(side_length(length))][(side_length(length))];
+    int length  = str.length();
+    char arrayCounter[(side_length(length))][(side_length(length))];
 
-       //create char matrix and place row major with  input string
-       for (int r  = 0; r  < side_length(length); r++)
-       {
-            for (int c  = 0; c < side_length(length); c++)
-            {
+     //create char matrix and place row major with  input string
+     for (int r  = 0; r  < side_length(length); r++)
+     {
+          for (int c  = 0; c < side_length(length); c++)
+          {
               arrayCounter[r][c] = str[counter++];
 
-                   if (arrayCounter[r][c] == 0)
-                   {
-                       char letChar = tolower(randchar());
-                        arrayCounter[r][c] += letChar;// append empty array with randchar
-                   }
-            }
+                if (arrayCounter[r][c] == 0)
+                {
+                      char letChar = tolower(randchar());
+                      arrayCounter[r][c] += letChar;// append empty array with randchar
+                 }
+           }
 
        }
 
