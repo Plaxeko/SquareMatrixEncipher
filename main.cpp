@@ -88,15 +88,15 @@ int side_length(int length)
 //return a random lower-case alphabetic character when calle
 char  randchar(void)
 {
-        int c = ' ';
-        //while (c < 'a' || c > 'z')
-        while (!isalpha(c))
-        {
-        c = rand() * 802701 ;
-        c %= 26 ;
-        c += 'a' ;
-        c %= 'z' ;
-        }
+      int c = ' ';
+      //while (c < 'a' || c > 'z')
+      while (!isalpha(c))
+      {
+          c = rand() * 802701 ;
+          c %= 26 ;
+          c += 'a' ;
+          c %= 'z' ;
+      }
         return c ;
 }
 
