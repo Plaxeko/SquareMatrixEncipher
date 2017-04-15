@@ -80,8 +80,15 @@ int side_length(int length)
      // correct length of the square array of characters
      // to hold the message, plus any padding characters.
      // int n = sqrt (s.length()) + 1;
-     int strlen = sqrt(length) + 1;
-     return strlen;
+     int root = sqrt(length);
+     if(root*root == length)//perfect square check
+         return root;
+      else
+         return root + 1;
+     
+
+}
+
 
 }
 
